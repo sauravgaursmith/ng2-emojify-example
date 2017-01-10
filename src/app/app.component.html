@@ -1,0 +1,10 @@
+<h1>
+  {{title}}
+</h1>
+<div [innerHTML]="message | emojify"></div>
+<br><br>
+<div>
+  <span><img src="assets/emo.jpg" [emotion-menu]="customEmotionCss" id="menu-btn" class="input-elements"></span>
+  <textarea class="input-elements" #txt_message (keyup.enter)="SetMessage(txt_message.value)"></textarea>
+</div>
+<emoji-menu></emoji-menu>

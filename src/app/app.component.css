@@ -1,0 +1,21 @@
+:host >>> .emogi-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.input-elements {
+  display: inline-block;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+textarea {
+  height: 40px;
+  width: 500px;
+  position: absolute;
+}
