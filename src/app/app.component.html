@@ -3,8 +3,40 @@
 </h1>
 <div [innerHTML]="message | emojify"></div>
 <br><br>
+
 <div>
   <span><img src="assets/emo.jpg" [emotion-menu]="customEmotionCss" id="menu-btn" class="input-elements"></span>
   <textarea class="input-elements" #txt_message (keyup.enter)="SetMessage(txt_message.value)"></textarea>
 </div>
+
+<div id="built-in-emoji-container">
+  <div id="instruction_div"><p>Type built-in emoji id in input box and hit enter</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/hello.gif"></span>
+    <p>:hello:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/happy.jpg"></span>
+    <p>:happy:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/flower.png"></span>
+    <p>:flower:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/allthebest.jpg"></span>
+    <p>:allthebest:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/angry.png"></span>
+    <p>:angry:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/confusion.jpg"></span>
+    <p>:confusion:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/cry.jpg"></span>
+    <p>:cry:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/dance.png"></span>
+    <p>:dance:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/hi.gif"></span>
+    <p>:hi:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/like.jpg"></span>
+    <p>:like:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/sad.jpg"></span>
+    <p>:sad:</p></div>
+  <div class="built-in-emoji"><span><img src="assets/emoji/heart.jpg"></span>
+    <p>:heart:</p></div>
+</div>
+
+<!-- EMOJI MENU COMPONENT -->
 <emoji-menu></emoji-menu>
+

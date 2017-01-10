@@ -6,6 +6,7 @@
 
 .input-elements {
   display: inline-block;
+  vertical-align: middle;
 }
 
 img {
@@ -18,4 +19,43 @@ textarea {
   height: 40px;
   width: 500px;
   position: absolute;
+}
+
+#built-in-emoji-container {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  margin-top: 30px;
+}
+
+.built-in-emoji {
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  float: left;
+}
+
+.built-in-emoji img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.built-in-emoji p {
+  height: 10px;
+  width: 160px;
+  margin: 5px;
+  text-align: center;
+}
+
+#instruction_div p:first-child {
+  text-align: left;
+  font-weight: 300;
+  font-size: large;
+  color: hotpink;
+}
+
+#instruction_div {
+  position: relative;
 }

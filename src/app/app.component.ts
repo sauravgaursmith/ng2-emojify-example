@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {CustomEmotion, Emotion} from "ng2-emojify";
-import { emotionCss} from './custom-emoji-menu-css';
+import {emotionCss} from './custom-emoji-menu-css';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,13 @@ import { emotionCss} from './custom-emoji-menu-css';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  @ViewChild('txt_message') txt_message: ElementRef;
   title: string = 'ng2-emojify-example application';
-  message: string = 'Hi ... I\'m so happy today ! :cat:';
+  message: string = 'Hi ... I\'m so happy today ! :happy:';
   customEmotionCss: any;
 
-  constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
+  constructor(private customEmotion: CustomEmotion, private emotion: Emotion, private elementRef: ElementRef) {
 
     this.customEmotionCss = emotionCss;
 
@@ -53,7 +55,7 @@ export class AppComponent {
 
 
   SetMessage(message: string): void {
-    console.log(message);
     this.message = message;
+    this.txt_message.nativeElement.value = '';
   }
 }
