@@ -2,7 +2,7 @@
 This is demo application for `ng2-emojify` the  Angular 2 Module.
 Link to install [`ng2-emojify`](https://github.com/sauravgaursmith/ng2-emojify)
 
-#####Prerequsite
+###### Prerequsite
 
     * Angular-cli: 1.0.0-beta.18 or higher
     * NPM : 4.0.2 or higher
