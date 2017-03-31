@@ -1,6 +1,6 @@
 # ng2-emojify-example
-This is demo application for `ng2-emojify` the  Angular 2 Module.
-Link to install [`ng2-emojify`](https://github.com/sauravgaursmith/ng2-emojify)
+This is demo application for <b>`ng2-emojify`</b> the  Angular 2 Module.
+Link to install [<b>`ng2-emojify`</b>](https://github.com/sauravgaursmith/ng2-emojify)
 
 ###### Prerequsite
 
